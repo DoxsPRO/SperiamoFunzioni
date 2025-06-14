@@ -12,6 +12,12 @@ const count = ref(0)
   <h1>{{ msg }}</h1>
 
   <div class="card">
+    <form>
+      <p>Add item</p>
+      <p>Item name: <input type="text" required></p>
+      <p>How many: <input type="number"></p>
+      <button type="submit">Add item</button>
+    </form>
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>
       Edit
